@@ -1,0 +1,1 @@
+# platform-helm-charts-external-secrets

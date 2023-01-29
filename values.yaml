@@ -1,0 +1,8 @@
+# Default values for glueops-cert-manager.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+external-secrets:
+  extraEnv:
+    - name: VAULT_SKIP_VERIFY
+      value: "true"

@@ -14,3 +14,6 @@ external-secrets:
     createClusterSecretStore: false
     # -- If true, create CRDs for Push Secret.
     createPushSecret: false
+  webhook:
+    deploymentAnnotations:
+      argocd.argoproj.io/sync-wave: "1"

@@ -1,9 +1,10 @@
 apiVersion: v2
 appVersion: v0.1.0
-description: GlueOps Helm Chart for external-secrets with sensible defaults. This chart also installs external-secrets CRD's.
+description: GlueOps Helm Chart for external-secrets with defaults to skip installing CRDs as they are installed separately and changing intervals for a faster deployment
 name: glueops-external-secrets
-version: 0.1.0-antonio-13
+version: 0.1.0
 dependencies:
   - name: external-secrets
     version: v0.7.2
     repository: https://charts.external-secrets.io
+

@@ -6,3 +6,5 @@ external-secrets:
   extraEnv:
     - name: VAULT_SKIP_VERIFY
       value: "true"
+  installCRDs: false
+

@@ -15,4 +15,6 @@ external-secrets:
     # -- If true, create CRDs for Push Secret.
     createPushSecret: false
   webhook:
-    certCheckInterval: 30s
+    certCheckInterval: "30s"
+  certController:
+    requeueInterval: "30s"

@@ -1,0 +1,20 @@
+# Default values for glueops-cert-manager.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+external-secrets:
+  extraEnv:
+    - name: VAULT_SKIP_VERIFY
+      value: "true"
+  installCRDs: false
+  crds:
+    # -- If true, create CRDs for Cluster External Secret.
+    createClusterExternalSecret: false
+    # -- If true, create CRDs for Cluster Secret Store.
+    createClusterSecretStore: false
+    # -- If true, create CRDs for Push Secret.
+    createPushSecret: false
+  webhook:
+    certCheckInterval: "30s"
+  certController:
+    requeueInterval: "30s"

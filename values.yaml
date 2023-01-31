@@ -16,6 +16,6 @@ external-secrets:
     createPushSecret: false
   webhook:
     certCheckInterval: "30s"
-    failurePolicy: Fail
+    failurePolicy: Ignore
   certController:
     requeueInterval: "30s"

@@ -16,5 +16,7 @@ external-secrets:
     createPushSecret: false
   webhook:
     certCheckInterval: "30s"
+    hostNetwork: true
+    port: 10751
   certController:
     requeueInterval: "30s"

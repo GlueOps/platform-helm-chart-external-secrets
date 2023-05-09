@@ -1,6 +1,6 @@
 # glueops-external-secrets
 
-![Version: 0.2.0](https://img.shields.io/badge/Version-0.2.0-informational?style=flat-square) ![AppVersion: v0.1.0](https://img.shields.io/badge/AppVersion-v0.1.0-informational?style=flat-square)
+![Version: 0.3.0-alpha1](https://img.shields.io/badge/Version-0.3.0--alpha1-informational?style=flat-square) ![AppVersion: v0.1.0](https://img.shields.io/badge/AppVersion-v0.1.0-informational?style=flat-square)
 
 GlueOps Helm Chart for external-secrets with defaults to skip installing CRDs as they are installed separately and changing intervals for a faster deployment
 
@@ -22,3 +22,5 @@ GlueOps Helm Chart for external-secrets with defaults to skip installing CRDs as
 | external-secrets.extraEnv[0].value | string | `"true"` |  |
 | external-secrets.installCRDs | bool | `false` |  |
 | external-secrets.webhook.certCheckInterval | string | `"30s"` |  |
+| external-secrets.webhook.hostNetwork | bool | `true` |  |
+| external-secrets.webhook.port | int | `10751` |  |

@@ -20,3 +20,12 @@ external-secrets:
     port: 10751
   certController:
     requeueInterval: "30s"
+  webhook:
+    affinity:
+      podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - topologyKey: kubernetes.io/hostname
+          labelSelector:
+            matchExpressions:
+              - {key: app.kubernetes.io/name, operator: In, values: [prometheus]}
+          namespaceSelector: {}

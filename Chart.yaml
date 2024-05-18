@@ -5,6 +5,6 @@ name: glueops-external-secrets
 version: 0.6.1
 dependencies:
   - name: external-secrets
-    version: 0.9.16
+    version: 0.9.18
     repository: https://charts.external-secrets.io
 

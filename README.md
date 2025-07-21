@@ -8,7 +8,7 @@ GlueOps Helm Chart for external-secrets with defaults to skip installing CRDs as
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.external-secrets.io | external-secrets | 0.16.2 |
+| https://charts.external-secrets.io | external-secrets | 0.18.2 |
 
 ## Values
 
